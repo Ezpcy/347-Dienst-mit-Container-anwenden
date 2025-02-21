@@ -42,7 +42,7 @@ docker search nginx
 ![](image/Pasted%20image%2020250221093131.png)
 *Abbildung 3: Docker Search Befehl*
 
--  Docker Befehl `dokcer rund -d -p 80:80 docker/getting-started` erklärt:
+-  Docker Befehl `dokcer run -d -p 80:80 docker/getting-started` erklärt:
 	- `-d`: Bedeutet, dass der Container im Hintergrund ausgeführt wird.
 	- `-p`: Portweiterleitung vom Host auf den Container.
 	- `80:80`: Port 80 auf dem Host wird auf Port 80 im Container weitergeleitet.
