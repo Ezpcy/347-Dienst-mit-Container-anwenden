@@ -1,5 +1,5 @@
-# 347 - DIenst mit Container anwenden
+# 347 - Dienst mit Container anwenden
 
 ## Kompetenznachweise
 
-- [KN01](Kompetenznachweise/KN01/Readme.md)
+- [KN01: Docker Grundlagen](Kompetenznachweise/KN01/Readme.md)
