@@ -1,0 +1,28 @@
+services:
+  db:
+    container_name: m347-kn04b-db
+    image: ezpcy/kn02b-db:latest
+    networks:
+      kn04b-network:
+        ipv4_address: 172.11.5.11
+
+  web:
+    container_name: m347-kn04b-web
+    image: ezpcy/kn02b-web:latest
+    networks:
+      kn04b-network:
+        ipv4_address: 172.11.5.10
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+networks:
+  kn04b-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.11.0.0/16
+          ip_range: 172.11.5.0/24
+          gateway: 172.11.5.254

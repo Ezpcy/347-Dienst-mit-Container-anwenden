@@ -1,0 +1,32 @@
+services:
+  db:
+    container_name: m347-kn04a-db
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      kn04a-network:
+        ipv4_address: 172.10.5.11
+
+  web:
+    container_name: m347-kn04a-web
+    build:
+      context: .
+      dockerfile: apache/dockerfile
+    networks:
+      kn04a-network:
+        ipv4_address: 172.10.5.10
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+networks:
+  kn04a-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.10.0.0/16
+          ip_range: 172.10.5.0/24
+          gateway: 172.10.5.254
