@@ -1,0 +1,22 @@
+volumes:
+  kn05c_volume:
+
+services:
+  nginx1:
+    image: nginx:latest
+    container_name: nginx1
+    volumes:
+      - type: volume
+        source: kn05c_volume
+        target: /mnt/volume
+      - type: bind
+        source: ./html
+        target: /usr/share/nginx/html
+      - type: tmpfs
+        target: /mnt/tmpfs
+
+  nginx2: 
+    image: nginx:latest
+    container_name: nginx2
+    volumes:
+      - kn05c_volume:/mnt/volume
