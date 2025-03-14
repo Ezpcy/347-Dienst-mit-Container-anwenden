@@ -8,3 +8,4 @@
 - [KN04: Docker Compose](Kompetenznachweise/KN04/Readme.md)
 - [KN05: Arbeit mit Speicher](Kompetenznachweise/KN05/Readme.md)
 - [KN06: Kubernetes I](/Kompetenznachweise/KN06/Readme.md)
+- [KN07: Kubernetes II](/Kompetenznachweise/KN07/Readme.md)
