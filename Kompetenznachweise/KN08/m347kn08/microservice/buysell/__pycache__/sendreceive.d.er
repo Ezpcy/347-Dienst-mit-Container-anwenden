@@ -1,0 +1,10 @@
+##[pylyzer] failed /home/ezpz/Nextcloud/ObsidianVault/Schule/Module/347 - Dienst mit Container anwenden/Kompetenznachweise/KN08/m347kn08/microservice/sendreceive.py 1742549731 1820
+.___v_desugar_1: Never
+.FastAPI: Never
+.HTTPException: Never
+.requests = pyimport "__init__"
+.__init__ = pyimport "__init__"
+
+.app: Never
+.ACCOUNT_SERVICE_URL: {"http:..localhost:8003"}
+.send_cryptos: (request: global::Dict!({Obj: Obj})) -> global::Dict!({{"message"}: {"Transfer erfolgreich"}})

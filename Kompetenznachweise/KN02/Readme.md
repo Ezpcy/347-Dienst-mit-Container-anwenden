@@ -3,9 +3,9 @@
 ## Dockerfile I
 
 ```dockerfile
-FROM nginx  # Basisimage
-COPY static-html-directory /var/www/html # Kopiert Dateien vom Hostin den Container
-EXPOSE 	80	# Port 80 freigeben
+FROM nginx 
+COPY static-html-directory /var/www/html 
+EXPOSE 	80
 ```
 
 **Dockerfile für das Repository:**

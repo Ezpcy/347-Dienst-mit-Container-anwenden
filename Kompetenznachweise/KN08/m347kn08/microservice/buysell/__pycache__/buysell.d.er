@@ -1,0 +1,11 @@
+##[pylyzer] failed /home/ezpz/Nextcloud/ObsidianVault/Schule/Module/347 - Dienst mit Container anwenden/Kompetenznachweise/KN08/m347kn08/microservice/buysell/buysell.py 1742549693 1531
+.___v_desugar_1: Never
+.FastAPI: Never
+.HTTPException: Never
+.requests = pyimport "__init__"
+.__init__ = pyimport "__init__"
+
+.app: Never
+.ACCOUNT_SERVICE_URL: {"http:..localhost:8002"}
+.buy_cryptos: (request: global::Dict!({Obj: Obj})) -> {False}
+.sell_cryptos: (request: global::Dict!({Obj: Obj})) -> {False}
